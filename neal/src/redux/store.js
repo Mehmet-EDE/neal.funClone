@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit'
-import { spendingSlice } from './spendingSlice'
+import { configureStore } from "@reduxjs/toolkit";
+import productReducer from "./Product/productSlice";
 
-export const store=configureStore({
- reducer:{
-  spending:spendingSlice
- }
+export const store = configureStore({
+    reducer:{
+        product:productReducer,
+    }
 })
